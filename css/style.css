@@ -487,12 +487,39 @@ button {
   .header__logo {
     display: none;
   }
+  
+  .nav-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+  }
 
+  .nav-button__text {
+    flex-shrink: 0;
+    font-weight: 500;
+    margin-right: 50px;
+    position: relative;
+  }
+  .nav-button__icon-container_repair{
+    
+    background-repeat: no-repeat;
+  }
   .button-group {
     position: absolute;
     top: 42px;
     right: 32px;
     z-index: 1;
+  }
+
+  .button-group__item{
+    display: flex;
+    position: relative;
+    
+  }
+
+  .button-group__item:not(:last-child){
+    margin-right: 172px;
   }
 
   .header {
